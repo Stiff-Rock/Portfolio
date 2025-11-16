@@ -1,11 +1,9 @@
 const translations = {
   en: {
-    greeting: 'Hi! I\'m Yago Pernas',
-    subTitle: 'Junior Full-Stack Developer'
+    greeting: 'Hi! I\'m a Junior Software and Videogame developer',
   },
   es: {
-    greeting: 'Hola! Soy Yago Pernas',
-    subTitle: 'Desarrollador Full-Stack Junior'
+    greeting: 'Hola! Soy un desarrollador junior de software y videojuegos',
   }
 }
 
@@ -25,7 +23,7 @@ function updateTextContents() {
   document.querySelectorAll('[data-key]').forEach(element => {
     const key = element.getAttribute('data-key');
     if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
+      element.textContent += translations[lang][key];
     }
   });
 }
