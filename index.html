@@ -4,25 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>StiffRock's Portfolio</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link href="css/variables.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/crt-effect.css" rel="stylesheet">
+
   <script src="js/languageDetection.js" defer></script>
   <div class="crt"></div>
 </head>
 
+<!--TODO: Make rounded borders using '─', '│', '┌', '┐', '└', '┘'-->
+
 <body>
   <header id="presentation">
-    <div id="pres-img-container">
-      <img src="images/pfp.jpg" class="portfolio-img" id="pfp">
-      <img src="images/Name.png" id="name">
-    </div>
+    <div id="pres-head">
+      <div id="pres-img-container">
+        <div id="pfp-container">
+          <img src="images/pfp.png" id="pfp-ascii">
+          <img src="images/real_pfp.png" id="pfp-real">
+        </div>
+        <div>
+          <img src="images/Name.png" id="name">
+          <p data-key="greeting" id="greeting" />
+        </div>
+      </div>
 
-    <div id="greeting-container">
-      <p data-key="greeting" id="greeting">stiffrock@portfolio:~$ </p>
+      <div id="social-links-section">
+        <a class="social-link" target="_blank" href="https://stiffrock.itch.io/">
+          <span class="logo"></span>
+          <span>Itch.io</span>
+        </a>
+
+        <a class="social-link" target="_blank" href="https://github.com/Stiff-Rock">
+          <span class="logo"></span>
+          <span>GitHub</span>
+        </a>
+
+        <a class="social-link" target="_blank" href="https://www.linkedin.com/in/yagopg/">
+          <span class="logo">󰌻</span>
+          <span>LinkedIn</span>
+        </a>
+      </div> display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      font-size: var(--social-link-text);
     </div>
   </header>
 
+
+  <main>
+    <p class="command-text" data-key="skills">stiffrock@portfolio:~$ cat </p>
+
+    <section id="skills-section">
+      <div class="skill-container">
+        <p class="skill-title">Languages</p>
+        <img src="images/pfp.png" class="project-img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+      </div>
+
+      <div class="skill-container">
+        <p class="skill-title">Engines and Frameworks</p>
+        <img src="images/pfp.png" class="project-img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+      </div>
+
+
+      <div class="skill-container">
+        <p class="skill-title">Sistems, tools and others</p>
+        <img src="images/pfp.png" class="project-img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+      </div>
+    </section>
+
+    <p class="command-text" data-key="projects">stiffrock@portfolio:~$ cat </p>
+
+    <section id="projects-section">
+      <div class="project-container">
+        <img src="images/pfp.png" class="project-img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vulputate
+          lorem in pretium scelerisque. Nullam enim orci, scelerisque at tempus ac, sodales a magna. Donec sed
+          vestibulum
+          dui. Nulla quis metus id sapien rhoncus cursus a quis purus. Cras vitae facilisis neque, a sollicitudin nibh.
+          Duis
+          eu vestibulum metus.
+        </p>
+      </div>
+
+      <div class="project-container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vulputate
+          lorem in pretium scelerisque. Nullam enim orci, scelerisque at tempus ac, sodales a magna. Donec sed
+          vestibulum
+          dui. Nulla quis metus id sapien rhoncus cursus a quis purus. Cras vitae facilisis neque, a sollicitudin nibh.
+          Duis
+          eu vestibulum metus.
+        </p>
+        <img src="images/pfp.png" class="project-img">
+      </div>
+
+      <div class="project-container">
+        <img src="images/pfp.png" class="project-img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vulputate
+          lorem in pretium scelerisque. Nullam enim orci, scelerisque at tempus ac, sodales a magna. Donec sed
+          vestibulum
+          dui. Nulla quis metus id sapien rhoncus cursus a quis purus. Cras vitae facilisis neque, a sollicitudin nibh.
+          Duis
+          eu vestibulum metus.
+        </p>
+      </div>
+
+      <div class="project-container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel rutrum lorem. Mauris risus enim, maximus ut
+          suscipit ut, placerat sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vulputate
+          lorem in pretium scelerisque. Nullam enim orci, scelerisque at tempus ac, sodales a magna. Donec sed
+          vestibulum
+          dui. Nulla quis metus id sapien rhoncus cursus a quis purus. Cras vitae facilisis neque, a sollicitudin nibh.
+          Duis
+          eu vestibulum metus.
+        </p>
+        <img src="images/pfp.png" class="project-img">
+      </div>
+    </section>
+
+    <p class="command-text" data-key="contact">stiffrock@portfolio:~$ cat </p>
+
+    <section id="contact-info-section">
+      <div class="contact-info">
+        <span class="logo"></span>
+        <span>+34 611 422 190</span>
+      </div>
+
+      <div class="contact-info">
+        <span class="logo">󰊫</span>
+        <span>yagopernasgomez@gmail.com</span>
+      </div>
+
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

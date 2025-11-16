@@ -1,9 +1,15 @@
 const translations = {
   en: {
-    greeting: 'Hi! I\'m a Junior Software and Videogame developer',
+    greeting: 'Junior Software and Videogame developer',
+    skills: 'my_skills.txt',
+    projects: 'my_projects.txt',
+    contact: 'info_contacto.txt'
   },
   es: {
-    greeting: 'Hola! Soy un desarrollador junior de software y videojuegos',
+    greeting: 'Desarrollador junior de software y videojuegos',
+    skills: 'mis_habilidades.txt',
+    projects: 'mis_proyectos.txt',
+    contact: 'contact_info.txt'
   }
 }
 

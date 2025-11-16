@@ -26,10 +26,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 3px dashed white;
-  margin: 10px;
-
+  margin: 0;
+  padding: 0;
   user-select: none;
 }
 
@@ -38,36 +37,79 @@ body {
   padding: 0 2vw 0 2vw;
 }
 
-.portfolio-img {
-  filter: grayscale(100%) contrast(1.2) blur(0.5px);
-  opacity: 0.8;
-
-  border-radius: 5px;
-  transition: all 0.3s ease;
+a {
+  color: inherit;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
-.portfolio-img:hover {
-  filter: none;
-  opacity: 1;
-  scale: 1.5;
+a:hover {
+  text-shadow:
+    0 0 8px white;
+}
+
+.command-text {
+  font-size: 1.4em;
 }
 
 #presentation {
-  padding: 2vw 0 2vw 0;
+  padding: var(--content-padding) 2vw 2vw 2vw;
+  box-sizing: border-box;
   width: 100%;
+}
+
+#pres-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 4vh;
 }
 
 #pres-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
-  gap: 50px;
+  gap: 5vw;
+  margin-bottom: 3vh;
 }
 
-#pfp {
-  height: auto;
-  width: 200px;
+#pfp-container {
+  height: var(--pfp-size);
+  width: var(--pfp-size);
+  position: relative;
+  padding: 1vw;
+  border: 3px dashed white;
+}
+
+#pfp-ascii,
+#pfp-real {
+  height: var(--pfp-size);
+  width: var(--pfp-size);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1vw;
+  border-radius: 5px;
+}
+
+#pfp-ascii:hover {
+  transition: 0.4s ease-in-out;
+}
+
+#pfp-ascii:hover {
+  opacity: 0;
+}
+
+#pfp-real {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+#pfp-real:hover {
+  opacity: 1;
+  scale: 1.1;
 }
 
 #name {
@@ -75,17 +117,91 @@ body {
   width: 900px;
 }
 
-#greeting-container {
-  display: flex;
-  padding: 1vw;
-  align-items: start;
-}
-
 #greeting {
+  padding-bottom: 2vh;
   margin: 0;
   font-weight: bold;
+  font-size: var(--greeting-subtitle);
+  padding-top: 2vh;
+  margin-top: 2vh;
+  text-align: center;
 }
 
-#greeting {
-  font-size: 2em;
+#social-links-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: var(--social-link-text);
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.logo {
+  font-size: var(--logo-size);
+}
+
+#skills-section {
+  display: flex;
+  gap: 1vw;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  border: 3px dashed white;
+}
+
+.skill-container p {
+  text-align: center;
+}
+
+.skill-title {
+  font-size: var(--skill-title);
+}
+
+#projects-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  align-self: center;
+  width: 70%;
+  margin-top: 3vh;
+  padding: 1vw;
+  display: flex;
+  gap: 20px;
+  border: 3px dashed white;
+}
+
+.project-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#contact-info-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-size: 1em;
+  margin-bottom: var(--content-padding);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 10px;
+  border: 3px dashed white;
 }
