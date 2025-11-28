@@ -238,3 +238,7 @@ a:hover {
   padding: 10px;
   border: 3px dashed white;
 }
+
+.contact-info-data {
+  user-select: text;
+}
