@@ -1,0 +1,12 @@
+{
+  "greeting": "Desarrollador junior de software y videojuegos",
+  "skills": "mis_habilidades.txt",
+  "projects": "mis_proyectos.txt",
+  "contact": "contact_info.txt",
+  "skills3": "Edición multimedia, Producción de Audio (DAWs)",
+  "project1": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
+  "project2": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
+  "project3": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
+  "poject4": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
+  "project-link": "Visitar repositorio "
+}

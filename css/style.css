@@ -163,7 +163,14 @@ a:hover {
 }
 
 .skill-title {
-  font-size: var(--skill-title);
+  font-size: var(--sub-title);
+}
+
+.skill-icon {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  font-size: var(--skill-icon);
 }
 
 #projects-section {
@@ -181,10 +188,24 @@ a:hover {
   border: 3px dashed white;
 }
 
-.project-img {
-  height: 200px;
-  width: 200px;
+.project-title {
+  font-size: var(--sub-title);
+}
+
+.project-img-r,
+.project-img-l {
+  height: var(--project-img-size);
+  width: var(--project-img-size);
+  align-self: center;
   border-radius: 5px;
+}
+
+.project-img-l {
+  margin-left: auto;
+}
+
+.project-link {
+  cursor: pointer;
 }
 
 #contact-info-section {

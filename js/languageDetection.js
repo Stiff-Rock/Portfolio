@@ -1,35 +1,42 @@
-const translations = {
-  en: {
-    greeting: 'Junior Software and Videogame developer',
-    skills: 'my_skills.txt',
-    projects: 'my_projects.txt',
-    contact: 'info_contacto.txt'
-  },
-  es: {
-    greeting: 'Desarrollador junior de software y videojuegos',
-    skills: 'mis_habilidades.txt',
-    projects: 'mis_proyectos.txt',
-    contact: 'contact_info.txt'
-  }
-}
-
-
 let lang = 'en';
+let translations = {};
 
-function detectLanguage() {
+async function detectLanguage() {
   const userLang = navigator.language || navigator.userLanguage;
 
   if (userLang.startsWith('es'))
     lang = 'es';
 
-  updateTextContents()
+  await loadTranslations(lang);
+}
+
+async function loadTranslations(selectedLang) {
+  try {
+    const response = await fetch(`./translations/${selectedLang}.json`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    translations = await response.json();
+    updateTextContents();
+  } catch (error) {
+    console.error('Error loading translations:', error);
+
+    if (selectedLang !== 'en') {
+      loadTranslations('en');
+    } else {
+      console.error('The default language (en) also failed to load.');
+      alert('Fatal error occurred, could not load translation files')
+    }
+  }
 }
 
 function updateTextContents() {
   document.querySelectorAll('[data-key]').forEach(element => {
     const key = element.getAttribute('data-key');
-    if (translations[lang] && translations[lang][key]) {
-      element.textContent += translations[lang][key];
+    if (translations[key]) {
+      element.innerText = translations[key];
     }
   });
 }
