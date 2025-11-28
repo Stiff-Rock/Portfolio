@@ -36,7 +36,7 @@ function updateTextContents() {
   document.querySelectorAll('[data-key]').forEach(element => {
     const key = element.getAttribute('data-key');
     if (translations[key]) {
-      element.innerText = translations[key];
+      element.innerText += translations[key];
     }
   });
 }

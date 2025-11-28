@@ -54,7 +54,7 @@ a:hover {
 }
 
 #presentation {
-  padding: var(--content-padding) 2vw 2vw 2vw;
+  padding: var(--content-padding);
   box-sizing: border-box;
   width: 100%;
 }
@@ -148,6 +148,7 @@ a:hover {
 #skills-section {
   display: flex;
   gap: 1vw;
+  padding-bottom: 3vh;
 }
 
 .skill-container {
@@ -178,10 +179,21 @@ a:hover {
   flex-direction: column;
 }
 
+#projects-section>*:nth-child(2) {
+  margin-top: 3vh;
+}
+
+#projects-section>*:nth-child(3) {
+  margin: 3vh 0 3vh 0;
+}
+
+#projects-section>*:nth-child(4) {
+  margin-bottom: 3vh;
+}
+
 .project-container {
   align-self: center;
   width: 70%;
-  margin-top: 3vh;
   padding: 1vw;
   display: flex;
   gap: 20px;

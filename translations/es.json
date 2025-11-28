@@ -5,8 +5,8 @@
   "contact": "contact_info.txt",
   "skills3": "Edición multimedia, Producción de Audio (DAWs)",
   "project1": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
-  "project2": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
-  "project3": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
-  "poject4": "GitTaur es un cliente gráfico de Git que aprovecha la velocidad de Rust y la eficiencia de Tauri para ofrecer una experiencia de usuario moderna con React y enfocada en la sencillez y accesibilidad para los usuarios principiantes en Git",
+  "project2": "Videojuego creado en Unity ganador del 3º premio de la gamejam 'CREATIVEJAM' organizada por uegamestudio en 2025. Deberás enfrentarte los problemas de la autenticación móvil intergaláctica, los anuncios abusivos, las estafas de criptomonedas y el miedo de hablar con la persona que te gusta.",
+  "project3": "Aplicación de escritorio en Java para Windows y Linux que permite reproducir videos y playlists de YouTube gracias a 'yt-dlp', pudiendo evitar anuncios, hacer fade out entre videos autoreproducir listas y organizar la cola de reproducción a gusto.",
+  "poject4": "Otra aplicación de escritorio Java para Windows que funciona como una red social cívica donde los vecinos de un barrio pueden comunicar incidencias y preocupaciones sobre la vía pública, facilitando su gestión directa por parte de las administraciones públicas y estableciendo un canal de comunicación institucional-ciudadano.",
   "project-link": "Visitar repositorio "
 }
