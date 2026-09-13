@@ -1,8 +1,8 @@
 {
   "greeting": "Junior Software and Videogame developer",
-  "skills": "my_skills.txt",
-  "projects": "my_projects.txt",
-  "contact": "info_contacto.txt",
+  "skills": " my_skills.txt",
+  "projects": " my_projects.txt",
+  "contact": " info_contacto.txt",
   "skills3": "Multimedia Editing, Audio Production (DAWs).",
   "project1": "GitTaur is a Git GUI built to take advantage of the speed and efficiency of Rust and the modern UX of React. How to run Currently, the app is in a very early stage, with a lot of bugs and missing core functionalites, but if you wish to run it either way, clone the repository, run npm install in the root folder and cargo build to download all the frontend and backend dependencies.",
   "project2": "A video game created in Unity that won 3rd prize at the 'CREATIVEJAM' game jam organized by uegamestudio in 2025. You will have to face the problems of intergalactic mobile authentication, abusive ads, cryptocurrency scams and the fear of talking to the person you like.",
