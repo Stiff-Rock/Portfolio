@@ -1,50 +1,119 @@
-  .crt::before {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
+.crt {
+  position: relative;
+  overflow: hidden;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.75) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.15), rgba(0, 255, 0, 0.08), rgba(0, 0, 255, 0.15));
+  z-index: 2;
+  background-size: 100% 2px, 6px 100%;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0.25) 88%,
+      rgba(0, 0, 0, 0.5) 100%);
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  pointer-events: none;
+  animation: flicker 0.25s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.98;
   }
 
-  @keyframes flicker {
-    0% {
-      opacity: 0.28;
-    }
-
-    25% {
-      opacity: 0.35;
-    }
-
-    50% {
-      opacity: 0.11;
-    }
-
-    75% {
-      opacity: 0.24;
-    }
-
-    100% {
-      opacity: 0.28;
-    }
+  50% {
+    opacity: 1.0;
   }
 
-  .crt::after {
-    content: " ";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.15s infinite;
+  100% {
+    opacity: 0.97;
   }
+}
+
+p {
+  animation: textFlicker 0.8s infinite;
+}
+
+@keyframes textFlicker {
+
+  0%,
+  100% {
+    text-shadow: 0 0 1px currentColor;
+  }
+
+  15% {
+
+    text-shadow: 0 0 0px currentColor;
+  }
+
+
+  45% {
+
+    text-shadow: 0 0 2px currentColor;
+  }
+
+  50% {
+    text-shadow: 0 0 1px currentColor;
+  }
+
+
+  60% {
+    text-shadow: 0 0 0px currentColor;
+  }
+
+  80% {
+    text-shadow: 0 0 2px currentColor;
+  }
+}
+
+.crt-beam {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 8%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  animation: scanbeam 7s linear infinite;
+}
+
+@keyframes scanbeam {
+  0% {
+    top: -12%;
+  }
+
+  100% {
+    top: 112%;
+  }
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.75) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.15), rgba(0, 255, 0, 0.08), rgba(0, 0, 255, 0.15));
+  z-index: 2;
+  background-size: 100% 2px, 6px 100%;
+  pointer-events: none;
+}
